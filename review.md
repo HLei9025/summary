@@ -1,6 +1,7 @@
 ## review
 ---
 #### HTML+CSS
+
 1. `HTML` 相关概念
     - `HTML`
     - `XHTML`
@@ -393,9 +394,10 @@
     }
     ```
 69. animation 和 transition 的区别
+---
 
 #### JavaScript
----
+
 1. `JavaScript` 概述   
   `JavaScript` 是一种基于对象的，事件驱动的，跨平台的，客户端脚本语言
 2. `JavaScript` 组成部分
@@ -827,7 +829,7 @@
     - `url`   
     .......
 93. `commonJS` 模块化规范
-    - `module.export`
+    - `module.exports`
     - `require`
     - 与 `ES6` 模块的区别（`ES6`输出是值的引用，`commonJS`输出是值的拷贝）
 94. `git`
@@ -853,4 +855,114 @@
     - `require.config` / `data-main`
     - `define` 定义模块
     - `require` 获取模块
+---
+
+#### Node.js + Vue.js
+
+1. `node` 中模块化的 `require('路径')` 路径的写法
+2. `node 文件系统模块` / `url` `url.parse()` `url.format()` / `querystring` / `http`
+3. 一个完整的 `http` 事务过程
+4. 正向代理和反向代理
+5. `express`的使用 / `express`中间件 / 路由的使用
+6. 前后端分离与不分离
+7. 模板引擎 `ejs`
+8. `mongodb`数据库操作
+9. `mock.js`
+10. `Vue` 指令
+    - `v-text`
+    - `v-html`
+    - `v-show`
+    - `v-if` / `v-else-if` / `v-else`
+    - `v-for`
+    - `v-on` (`@`)
+    - `v-bind` (`:`)
+    - `v-model` 
+    - `v-pre`
+    - `v-cloak`
+    - `v-once`
+11. 计算属性 `computed`
+12. 监听器 `watch` / `vm.$watch`
+13. `Vue` 生命周期
+    - `beforeCreate()`
+    - `created()`
+    - `beforeMount()`
+    - `mounted()`
+    - `beforeUpdate()`
+    - `updated()`
+    - `beforeDestroy()`
+    - `destroyed()`
+14. `ref` / `$refs`
+15. 组件
+    - 全局组件
+    - 局部组件
+16. 组件间的调用
+17. 父子组件间的传值
+18. 组件的属性类型
+    - `props` 外部属性
+    - `data` 内部属性
+    - `computed` 计算属性
+19. 动态组件和缓存
+    - `component` `:is`
+    - `keep-alive`
+20. `slot` 的基本使用
+21. 非父子组件间传值
+    - `$emit()`
+    - `$on()`
+22. 自定义指令 `Vue.directive('name', fn)`
+23. 组件上使用 `v-model`
+    - `v-bind:value="something"`
+    - `v-on:input="something = $event.target.value"`
+24. `slot` 通信
+    - `vm.$children`
+    - `vm.$parent`
+25. `Vue.use(plugin)`使用插件
+26. 过滤器 `Vue.filter('name', fn)`
+27. `Vue` 路由
+    - `router-link` / `router-view`
+    - 路由的配置和嵌套
+    - 动态路由和命名路由
+    - 编程式导航，重定向，别名
+      - `this.$router.push()`
+      - `this.$router.replace()`
+      - `this.$router.go()`
+      - `this.$router.back()`
+      - `this.$router.forward()`
+        ```js
+        this.$router.push({name: 'name', params: {id: 'id'}})
+        this.$router.push({path: 'path', query: {id: 'id'}})
+        ```
+    - 重定向 `redirect`
+    - 别名 `alias`
+    - 异步组件，组件懒加载 `component: () => import('component's path')`
+    - 命名视图
+    - 路由 `props` 传值
+      - 布尔模式
+      - 对象模式
+      - 函数模式
+28. `Vue` 动画 `transition`
+29. 滚动 `better-scroll`
+30. 边框1像素 `border.css`插件
+31. `Vuex` 
+    - `state`
+    - `getters`
+    - `mutations`
+    - `actions`
+    - `modules`
+    - 命名空间 `namespaced: true`
+    - `Vuex`简写（辅助函数）
+      - `mapState`
+      - `mapGetters`
+      - `mapMutations`
+      - `mapActions`
+32. 路由守卫（路由拦截）
+    - 全局前置守卫 `router.beforeEach((to, from, next)=>{})`
+    - 全局解析守卫 `router.beforeResolve((to, from, next)=>{})`
+    - 全局后置钩子 `router.afterEach((to, from)=>{})`
+    - 独享守卫 `beforeEnter((to, from, next)=>{})`
+    - 组件内的守卫
+      - `beforeRouteEnter((to, from, next)=>{})`
+      - `beforeRouteLeave((to, from, next)=>{})`
+      - `beforeRouteUpdate((to, from, next)=>{})`
+
+
 
