@@ -235,7 +235,7 @@
         * `@extend`
         * `@if`, `@for`, `@function`
     * `requireJS`
-        * `requirejs.config`
+        * `require.config`
         * `require()`
         * `define()`
 12. 服务器等相关知识巩固
@@ -286,7 +286,7 @@
     * 非父子组件传值 `$emit` `$on`
     * 自定义指令 `Vue.directive()`
     * 组件上用 `v-model`
-    * `vm.$children`, `vm.$parent(`)
+    * `vm.$children`, `vm.$parent`
     * `Vue.use()` 使用插件
     * 过滤器 `Vue.filter()`
     * `vue` 路由
